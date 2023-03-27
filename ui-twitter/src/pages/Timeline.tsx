@@ -8,20 +8,22 @@ export function Timeline() {
   const {
     createNewTweet,
     handleHotKeySubmit,
-    newTweet,
-    // setNewTweet,
-    tweets
+    tweets,
+    errors,
+    handleSubmit,
+    register
   } = useCreateNewTweet(['Meu primeiro tweet', 'Teste', 'Deu certo tweetar!'])
   return (
     <main>
       <Header title="Home" page="Home" />
 
       <Form
-        newTweet={newTweet}
-        // setNewTweet={setNewTweet}
         placeholder="What's happening?"
         createNewTweet={createNewTweet}
         handleHotkeySubmit={handleHotKeySubmit}
+        handleSubmit={handleSubmit}
+        register={register}
+        errors={errors}
       />
 
       <Separator />

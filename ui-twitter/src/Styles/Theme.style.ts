@@ -3,15 +3,15 @@ export const Theme = {
   color: {
     background: {
       main: '#fff',
-      contrastText: '#141827',
+      contrastText: '#141827'
     },
     primary: {
       main: '#ebeef0',
-      contrastText: '#b5c0c7',
+      contrastText: '#b5c0c7'
     },
     secondary: {
       main: '#89a2b8',
-      contrastText: '#6182a0',
+      contrastText: '#6182a0'
     },
     tertiary: {
       main: '#1da1f2',
@@ -24,6 +24,10 @@ export const Theme = {
     fifth: {
       main: '#f7f9fa',
       contrastText: '#bacbd4'
+    },
+    error: {
+      main: '#e0245e',
+      contrastText: '#b61a4a'
     },
     white: {
       main: '#fff',

@@ -27,6 +27,10 @@ export const DarkTheme: DefaultTheme = {
       main: Theme.color.fifth.contrastText,
       contrastText: Theme.color.fifth.main
     },
+    error: {
+      main: Theme.color.error.contrastText,
+      contrastText: Theme.color.error.main
+    },
     white: {
       main: Theme.color.white.contrastText,
       contrastText: Theme.color.white.main

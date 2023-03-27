@@ -3,7 +3,17 @@ import styled from 'styled-components'
 type ITweetTheme = {
   isResponseTweetOrNewTweet?: string
   svgOn?: boolean
+  error?: boolean
 }
+
+const errorMsg = styled.span<ITweetTheme>`
+  display: none;
+  ${({ error }) => error && 'display: flex;'}
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+`
 
 const newTweetForm = styled.form<ITweetTheme>`
   padding: 1.5rem 1.25rem;
@@ -12,10 +22,9 @@ const newTweetForm = styled.form<ITweetTheme>`
     isResponseTweetOrNewTweet === 'Tweet' && 'flex-direction: column;'}
   ${({ isResponseTweetOrNewTweet }) =>
     isResponseTweetOrNewTweet === 'Answer' && 'align-items: center;'}
-  /* ${props =>
-    props.isResponseTweetOrNewTweet === 'Tweet' && 'flex-direction: column;'} */
   gap: 0.5rem;
   border-bottom: 1px solid ${({ theme }) => theme.color.primary.main};
+  width: 100%;
 `
 const newTweetFormLabel = styled.label`
   flex: 1;
@@ -25,7 +34,8 @@ const newTweetFormLabel = styled.label`
 `
 
 const newTweetFormButtonSubmit = styled.button<ITweetTheme>`
-  background: ${({ theme }) => theme.color.tertiary.main};
+  background: ${({ error, theme }) =>
+    error ? theme.color.error.contrastText : theme.color.tertiary.main};
   border-radius: 9999px;
   padding: 0.75rem 1.5rem;
   margin-left: auto;
@@ -34,6 +44,9 @@ const newTweetFormButtonSubmit = styled.button<ITweetTheme>`
   font-weight: 900;
   border: 0;
   outline: 0;
+  :disabled {
+    cursor: not-allowed;
+  }
   transition: filter 0.3s ease-in-out;
   &:hover {
     filter: ${({ theme }) => theme.color.filter.main};
@@ -48,14 +61,10 @@ const newTweetFormButtonSubmit = styled.button<ITweetTheme>`
     svg {
       display: block;
     }
-    span { 
+    span {
       ${({ svgOn }) => svgOn && 'display: none;'}
     }
   }
 `
 
-export {
-  newTweetForm,
-  newTweetFormLabel,
-  newTweetFormButtonSubmit
-}
+export { newTweetForm, newTweetFormLabel, newTweetFormButtonSubmit, errorMsg }

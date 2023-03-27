@@ -1,17 +1,26 @@
 import styled from 'styled-components'
 
-const containerTextarea = styled.div`
+type TextAreaProps = {
+  error: boolean
+}
 
+const containerTextarea = styled.div<TextAreaProps>`
+  border: ${({ error, theme }) =>
+    error && `2px solid ${theme.color.error.contrastText}`};
+  border-radius: 15px;
+  width: 100%;
 `
-const Textarea = styled.textarea`
+const Textarea = styled.textarea<TextAreaProps>`
   flex: 1;
   border: 0;
   font-size: ${({ theme }) => theme.font.defaultM};
   font-weight: 500;
   margin-top: 1.25rem;
+  padding: 1rem;
   resize: none;
   color: ${({ theme }) => theme.color.black.main};
   background-color: transparent;
+  width: 100%;
   &:focus {
     outline: none;
   }
@@ -24,7 +33,4 @@ const Textarea = styled.textarea`
   }
 `
 
-export {
-  containerTextarea,
-  Textarea
-}
+export { containerTextarea, Textarea }
