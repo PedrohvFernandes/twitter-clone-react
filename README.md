@@ -19,10 +19,6 @@
 
 Um projeto simples de "criação" do Twitter, a onde na branch main não é feito validação, mas que tem a separação da logica e style, ja na branch using-react-hook-forms é usado um tratamento antes de enviar o tweet com react-hook-forms
 
-## Demo ##
-- ### [Sem o react hook forms](https://twitter-clone-react-two.vercel.app)
-- ### [Com o react hook forms](https://twitter-clone-react-7jzx.vercel.app)
-
 ## Screens ##
 <div>
   <img src='https://github.com/PedrohvFernandes/twitter-clone-react/blob/using-react-hook-form/Screen/Screen1.png' width='800'>
