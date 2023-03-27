@@ -1,20 +1,15 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Twitter Clone React" />
-
-  &#xa0;
-</div>
-
 <h1 align="center">Twitter Clone React</h1>
 
 
 <p align="center">
-  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#dart-about">About</a> &#xa0; | &#xa0;
+  <a href="#screens">Screens</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#🔗-links">Links</a> &#xa0; | &#xa0;
+  <a href="#-links">Links</a> &#xa0; | &#xa0;
   <a href="#melhorias">Melhorias</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="#👨‍💻-autor">Author</a>
+  <a href="#-autor">Author</a>
 </p>
 
 <br>
@@ -22,6 +17,13 @@
 ## :dart: About ##
 
 Um projeto simples de "criação" do Twitter, a onde na branch main não é feito validação, mas que tem a separação da logica e style, ja na branch using-react-hook-forms é usado um tratamento antes de enviar o tweet com react-hook-forms
+
+## Screens ##
+<div>
+  <img src='https://github.com/PedrohvFernandes/twitter-clone-react/blob/using-react-hook-form/Screen/Screen1.png' width='800'>
+  <img src='https://github.com/PedrohvFernandes/twitter-clone-react/blob/using-react-hook-form/Screen/Screen2.png' width='800'>
+  <img src='https://github.com/PedrohvFernandes/twitter-clone-react/blob/using-react-hook-form/Screen/Screen3.png' width='800'>
+</div>
 
 ## :sparkles: Features ##
 
