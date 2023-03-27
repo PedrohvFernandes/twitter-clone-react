@@ -30,7 +30,7 @@ Um projeto simples de "criação" do Twitter, a onde na branch main não é feit
 
 :heavy_check_mark: Criação de um tweet\
 :heavy_check_mark: Botão light ou dark theme\
-:heavy_check_mark: Validação do forms;
+:heavy_check_mark: Validação do forms\
 :heavy_check_mark: Separação de responsabilidade da logica de negócio da interface;
 
 ## :rocket: Technologies ##
