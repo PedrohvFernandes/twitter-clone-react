@@ -1,7 +1,7 @@
 import * as S from './ButtonThemeDarkOrLight.style'
 
 interface ButtonThemeDarkOrLightProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
-  isDarkTheme: boolean
+  isDarkTheme: null | string
 }
 
 export function ButtonThemeDarkOrLight({isDarkTheme, ...rest}: ButtonThemeDarkOrLightProps) {
@@ -9,10 +9,9 @@ export function ButtonThemeDarkOrLight({isDarkTheme, ...rest}: ButtonThemeDarkOr
   return (
     <S.buttonThemeDarkOrLight
       {...rest}
-      themeDark={isDarkTheme}
       type="button"
     >  
-      <span>{isDarkTheme ? '🌚' : '🌞'}</span>
+      <span>{isDarkTheme === 'false' ? '🌞' : '🌚'}</span>
     </S.buttonThemeDarkOrLight>
   )
 }

@@ -1,8 +1,6 @@
 import styled from 'styled-components'
-type IButton = {
-  themeDark: boolean
-}
-export const buttonThemeDarkOrLight = styled.button<IButton>`
+
+export const buttonThemeDarkOrLight = styled.button`
   background-color: ${props => props.theme.color.tertiary.main};
   border: none;
   cursor: pointer;

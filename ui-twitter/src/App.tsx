@@ -1,25 +1,19 @@
-import { useState } from 'react'
-
 import { RouterProvider } from 'react-router-dom'
 import { router } from './routes'
 
-import { GlobalStyle } from './Styles/Global.Style'
 import { ThemeProvider } from 'styled-components'
-import { Theme } from './Styles/Theme.style'
 import { ButtonThemeDarkOrLight } from './components/ButtonThemeDarkOrLight'
+import { useIsDarkTheme } from './Hooks/useIsDarkTheme'
+import { GlobalStyle } from './Styles/Global.Style'
+import { Theme } from './Styles/Theme.style'
 import { DarkTheme } from './Styles/Themes/Dark.theme'
 
 export function App() {
-  const [isDarkTheme, setIsDarkTheme] = useState(false)
-
-  const handleButton = () => {
-    setIsDarkTheme(!isDarkTheme)
-  }
-
+  const { getDarkThemeFromLocalStorage, handleButton } = useIsDarkTheme()
   return (
-    <ThemeProvider theme={isDarkTheme ? DarkTheme : Theme}>
+    <ThemeProvider theme={getDarkThemeFromLocalStorage === 'false' ? Theme : DarkTheme}>
       <ButtonThemeDarkOrLight
-        isDarkTheme={isDarkTheme}
+        isDarkTheme={getDarkThemeFromLocalStorage}
         onClick={handleButton}
       />
 
