@@ -3,7 +3,6 @@
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0;
-  <a href="#demo">Demo</a> &#xa0; | &#xa0;
   <a href="#screens">Screens</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
@@ -45,6 +44,7 @@ The following tools were used in this project:
   - Clean clode(Separação de responsabilidade da logica de negócio da interface)
   - Hooks personalizados:
     - useCreateNewTweet(Cria um tweet)
+    - useIsDarkTheme(Define o theme Dark ou Light(Default) armazenando no local storage)
 
 - Branch using-react-hook-forms
   - Tudo da branch main
@@ -62,7 +62,7 @@ This project is under license from MIT. For more details, see the [LICENSE](LICE
 
 ## Melhorias ##
 
-Que melhorias você fez no seu código? Ex: refatorações, melhorias de performance, acessibilidade, etc
+Que melhorias você me sugere fazer ?
 
 ## 👨‍💻 Autor: ##
 
