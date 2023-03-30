@@ -3,12 +3,10 @@
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0;
-  <a href="#demo">Demo</a> &#xa0; | &#xa0;
   <a href="#screens">Screens</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#-links">Links</a> &#xa0; | &#xa0;
-  <a href="#melhorias">Melhorias</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="#-autor">Author</a>
 </p>
@@ -60,9 +58,6 @@ This project is under license from MIT. For more details, see the [LICENSE](LICE
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-henrique-vieira-fernandes/)
 [![linkedin](https://img.shields.io/static/v1?label=Curriculum&message=cv&color=informational)](https://drive.google.com/file/d/1oSKo99CBj6xD9wS4hrCvxPUv67OEK1Ud/view)
 
-## Melhorias ##
-
-Que melhorias você fez no seu código? Ex: refatorações, melhorias de performance, acessibilidade, etc
 
 ## 👨‍💻 Autor: ##
 
